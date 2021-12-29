@@ -1,0 +1,12 @@
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    margin-right: 103px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  margin-bottom: 220px;
+}

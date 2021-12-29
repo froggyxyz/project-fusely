@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 315px 121px;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      font-family: $fontFamilyText;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #9893a3;
+      margin-right: 36px;
+      position: relative;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        color: #2f2e41;
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: #9e99ff;
+          position: absolute;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

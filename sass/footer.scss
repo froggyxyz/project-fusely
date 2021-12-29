@@ -1,0 +1,46 @@
+.footer {
+  padding: 245px 0 40px;
+  background: rgba(236, 235, 255, 0.6);
+  &__inner {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 78px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        font-family: $fontFamilyText;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #2f2e41;
+        margin-bottom: 20px;
+      }
+      a {
+        font-family: $fontFamilyText;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #717082;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &__footing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 315px;
+    p {
+      font-family: $fontFamilyText;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #9893a3;
+    }
+  }
+}
