@@ -67,5 +67,38 @@ main {
       line-height: 56px;
       color: #ffffff;
     }
+    button {
+      padding: 16px 56px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 0;
+    .examination {
+      min-height: 760px;
+    }
+    .solutions {
+      min-height: 825px;
+    }
+    .team {
+      min-height: 718px;
+    }
+    .examination,
+    .solutions,
+    .team {
+      padding: 0;
+      background-position: bottom;
+      margin-bottom: 140px;
+      h2,
+      p {
+        max-width: none;
+      }
+    }
+    .banner {
+      position: static;
+      transform: none;
+    }
   }
 }

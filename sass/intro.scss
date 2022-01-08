@@ -23,3 +23,17 @@
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 768px) {
+  .intro {
+    height: 100vh;
+    background-position: bottom;
+    padding: 0;
+    padding-top: 55px;
+    margin-bottom: 106px;
+    h1,
+    p {
+      max-width: none;
+    }
+  }
+}

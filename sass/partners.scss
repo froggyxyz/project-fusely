@@ -1,12 +1,17 @@
 .partners {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   svg {
-    margin-right: 103px;
     &:last-child {
       margin-right: 0;
     }
   }
   margin-bottom: 220px;
+}
+
+@media (max-width: 768px) {
+  .partners {
+    margin-bottom: 140px;
+  }
 }

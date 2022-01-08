@@ -75,3 +75,16 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .plan {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 140px;
+    div {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 45px;
+    }
+  }
+}

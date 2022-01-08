@@ -19,6 +19,9 @@ a {
     padding-left: 40px !important;
     padding-right: 40px !important;
   }
+  &-partners {
+    padding: 0 139px !important;
+  }
 }
 
 h1,
@@ -79,4 +82,9 @@ h6 {
 }
 
 @media (max-width: 768px) {
-} ;
+  .container {
+    &-partners {
+      padding: 0px 40px !important;
+    }
+  }
+}
