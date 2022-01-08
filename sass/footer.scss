@@ -27,13 +27,33 @@
         color: #717082;
         margin-bottom: 8px;
       }
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          svg {
+            fill: #fff;
+            path {
+              fill: #9893a3;
+            }
+          }
+          &:hover {
+            svg {
+              fill: #6c63ff;
+              path {
+                fill: #fff;
+              }
+            }
+          }
+        }
+      }
     }
   }
   &__footing {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 315px;
     p {
       font-family: $fontFamilyText;
       font-style: normal;

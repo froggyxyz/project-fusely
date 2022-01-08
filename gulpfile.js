@@ -14,5 +14,5 @@ function buildStyles() {
 
 exports.buildStyles = buildStyles;
 exports.default = function () {
-  watch('./sass/**/*.scss', buildStyles);
+  watch('./**/*.scss', buildStyles);
 };

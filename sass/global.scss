@@ -10,8 +10,15 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1260px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
   margin: 0 auto;
+  &-bigger {
+    max-width: 1360px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
 }
 
 h1,
@@ -58,6 +65,7 @@ h6 {
   letter-spacing: -1px;
   color: #2f2e41;
   position: relative;
+  text-align: center;
   &::after {
     content: '';
     display: block;
@@ -69,3 +77,6 @@ h6 {
     z-index: -1;
   }
 }
+
+@media (max-width: 768px) {
+} ;

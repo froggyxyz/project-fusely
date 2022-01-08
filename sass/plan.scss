@@ -24,6 +24,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &:hover {
+      background: rgba(108, 99, 255, 1);
+      h3 {
+        color: #ffffff;
+        span {
+          color: #ffffff;
+        }
+      }
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        &:first-child {
+          color: #ffffff;
+        }
+      }
+    }
     h3 {
       font-family: $fontFamilyText;
       font-style: normal;

@@ -1,8 +1,8 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 315px 121px;
+  margin: 40px auto 121px !important;
   .nav {
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,31 @@ header {
           margin-top: 5px;
         }
       }
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    min-width: 258px;
+  }
+  &__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .nav {
+      display: none;
+    }
+    &__buttons {
+      display: none;
+    }
+    &__menu {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
     }
   }
 }
