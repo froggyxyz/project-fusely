@@ -89,7 +89,7 @@ main {
     .solutions,
     .team {
       padding: 0;
-      background-position: bottom;
+      background-position: bottom center;
       margin-bottom: 140px;
       h2,
       p {
@@ -99,6 +99,45 @@ main {
     .banner {
       position: static;
       transform: none;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  main {
+    .examination {
+      min-height: 509px;
+    }
+    .solutions {
+      min-height: 549px;
+    }
+    .team {
+      min-height: 455px;
+    }
+    .examination,
+    .solutions,
+    .team {
+      background-size: 90%;
+      margin-bottom: 100px;
+      h2 {
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 16px;
+      }
+      p {
+        margin-bottom: 16px;
+      }
+    }
+    .banner {
+      flex-direction: column;
+      padding: 72px 0;
+      h2 {
+        font-size: 34px;
+        line-height: 40px;
+        max-width: none;
+        text-align: center;
+        margin-bottom: 60px;
+      }
     }
   }
 }

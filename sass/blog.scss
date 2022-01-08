@@ -78,3 +78,26 @@
     }
   }
 }
+
+@media (max-width: 428px) {
+  .blog {
+    &__heading {
+      margin-bottom: 40px;
+      h2 {
+        font-size: 34px;
+        line-height: 40px;
+      }
+    }
+    &__item {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 40px;
+      div {
+        margin-left: 0;
+      }
+      img {
+        margin-bottom: 26px;
+      }
+    }
+  }
+}

@@ -50,6 +50,9 @@
       }
     }
   }
+  &__links {
+    max-width: 120px;
+  }
   &__footing {
     display: flex;
     justify-content: space-between;
@@ -68,5 +71,18 @@
 @media (max-width: 768px) {
   .footer {
     padding-top: 76px;
+  }
+}
+
+@media (max-width: 428px) {
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      margin-bottom: 68px;
+      & > div {
+        flex-basis: 50%;
+        margin-bottom: 60px;
+      }
+    }
   }
 }

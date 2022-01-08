@@ -4,6 +4,7 @@
   margin-bottom: 120px;
   h1 {
     max-width: 489px;
+    font-family: $fontFamilyHeading;
     font-style: normal;
     font-weight: 700;
     font-size: 86px;
@@ -14,7 +15,7 @@
   }
   p {
     max-width: 489px;
-    font-family: Open Sans;
+    font-family: $fontFamilyText;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -27,13 +28,31 @@
 @media (max-width: 768px) {
   .intro {
     height: 100vh;
-    background-position: bottom;
+    background-position: bottom center;
     padding: 0;
     padding-top: 55px;
     margin-bottom: 106px;
     h1,
     p {
       max-width: none;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .intro {
+    max-height: 670px;
+    background-size: 82%;
+    background-position: bottom center;
+    padding-top: 40px;
+    margin-bottom: 80px;
+    h1 {
+      font-size: 46px;
+      line-height: 50px;
+      margin-bottom: 24px;
+    }
+    p {
+      margin-bottom: 24px;
     }
   }
 }
