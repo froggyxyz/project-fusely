@@ -1,5 +1,6 @@
 .intro {
   background: url(../img/intro-bg.svg) right center no-repeat;
+  background-size: 50%;
   padding: 45px 0;
   margin-bottom: 120px;
   h1 {
@@ -28,10 +29,12 @@
 @media (max-width: 768px) {
   .intro {
     height: 100vh;
+    background-size: 82%;
     background-position: bottom center;
     padding: 0;
     padding-top: 55px;
     margin-bottom: 106px;
+    min-height: 982px;
     h1,
     p {
       max-width: none;
@@ -42,7 +45,7 @@
 @media (max-width: 428px) {
   .intro {
     max-height: 670px;
-    background-size: 82%;
+    min-height: auto;
     background-position: bottom center;
     padding-top: 40px;
     margin-bottom: 80px;
